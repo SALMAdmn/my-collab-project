@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Tableau de bord</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Barre latérale */
+.sidebar {
+  width: 250px;
+  background: #2c3e50;
+  color: white;
+  padding: 30px 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #1abc9c;
+}
+
+/* Contenu principal */
+.main-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-left: 5px solid #1abc9c;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 250px;
+}
+
+.card h3 {
+  color: #1abc9c;
+  margin-bottom: 10px;
+}
+
+</style></head>
+<body>
+
+<div class="container">
+  <!-- Barre latérale -->
+  <aside class="sidebar">
+    <h2>Admin</h2>
+    <ul>
+      <li><a href="index.php">Tableau de bord</a></li>
+      <li><a href="cours.php">Gérer les cours</a></li>
+      <li><a href="publications.php">Gérer les publications</a></li>
+      <li><a href="annonces.php">Gérer les annonces</a></li>
+      <li><a href="logout.php">Déconnexion</a></li>
+    </ul>
+  </aside>
+
+  <!-- Contenu principal -->
+  <main class="main-content">
+    <h1>Bienvenue, Professeur</h1>
+    <p>Utilisez le menu à gauche pour gérer le contenu de votre site web.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Cours</h3>
+        <p>Ajoutez, modifiez ou supprimez les cours.</p>
+      </div>
+      <div class="card">
+        <h3>Publications</h3>
+        <p>Gérez vos publications de recherche.</p>
+      </div>
+      <div class="card">
+        <h3>Annonces</h3>
+        <p>Diffusez des annonces importantes.</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
