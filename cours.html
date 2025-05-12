@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Cours</title>
+<style>
+    body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+img{
+    width: 200px;
+}
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+button:hover{
+color: white;
+background-color: #007bff;
+}
+.filled:hover{
+color:  #007bff;
+background-color: white;
+}
+section {
+  padding: 60px 40px;
+  background: #fff;
+}
+
+section h2 {
+  color: #007bff;
+}
+
+/* Cartes de prix */
+.pricing-container {
+  margin-top: 30px;
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+.card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  color: #555;
+  margin: 10px 0;
+}
+
+.feature {
+  color: #007bff;
+  margin: 5px 0;
+}
+
+
+button {
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  background: white;
+  color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.filled {
+  background: #007bff;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+</style></head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Mohamed Saad AZIZI</div>
+    <ul class="nav-links">
+      <li><a href="index.html">À propos</a></li>
+      <li><a href="recherche.html">Recherche</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="cours.html">Cours</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section cours -->
+  <section>
+    <h2>Cours</h2>
+    <p>Découvrez nos différentes formules de cours en technologies web, adaptées à vos besoins et à votre rythme d'apprentissage :</p>
+  
+    <div class="pricing-container">
+      <div class="card">
+        <img src="images/Capture d'écran 2025-05-08 144043.png" alt="Débutant">
+        <h2>INITIATION</h2>
+        <p class="feature">HTML & CSS de base</p>
+        <p class="feature">Introduction à JavaScript</p>
+        <a href="pdf/htmlcss.pdf" download>
+          <button>Télécharger</button>
+        </a>
+      </div>
+  
+      <div class="card">
+        <img src="images/Capture d'écran 2025-05-08 144217.png" alt="Intermédiaire">
+        <h2>INTERMÉDIAIRE</h2>
+        <p class="feature">Projets dynamiques en PHP</p>
+        <p class="feature">Base de données MySQL</p>
+        <a href="pdf/php.pdf" download>
+          <button class="filled">Télécharger</button>
+        </a>
+      </div>
+  
+      <div class="card">
+        <img src="images/Capture d'écran 2025-05-08 143039.png" alt="Avancé">
+        <h2>AVANCÉ</h2>
+        <p class="feature">Frameworks (Laravel, React)</p>
+        <p class="feature">Déploiement & Sécurité</p>
+        <a href="pdf/React.pdf" download>
+          <button>Télécharger</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
